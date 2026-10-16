@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestão de Frota Logística</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Gestão de Frota Logística</h1>
+    <p>Monitoramento de Manutenção Preventiva</p>
+
+    <!-- Formulário para cadastrar o caminhão -->
+    <div class="form-container">
+      <input type="text" id="placa" placeholder="Placa do Caminhão (ex: ABC-1234)">
+      <input type="number" id="km" placeholder="Quilometragem (KM)">
+      <button id="btnAdicionar">Cadastrar Caminhão</button>
+    </div>
+
+    <!-- Tabela para listar os caminhões -->
+    <table>
+      <thead>
+        <tr>
+          <th>Placa</th>
+          <th>Quilometragem</th>
+          <th>Status da Manutenção</th>
+        </tr>
+      </thead>
+      <tbody id="listaCaminhoes">
+        <!-- Os caminhões vão aparecer aqui via JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
